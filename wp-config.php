@@ -17,8 +17,8 @@
  *
  * @package WordPress
  */
-if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
-    $db = parse_url($_ENV[`CLEARDB_DATABASE_URL`]);
+if(isset($_ENV[`CLEARDB_NAVY_URL`])) {
+    $db = parse_url($_ENV[`CLEARDB_NAVY_URL`]);
     define(‘DB_NAME’, trim($db[`path`],`/`));
     define(‘DB_USER’, $db[`user`]);
     define(‘DB_PASSWORD’, $db[`pass`]);
@@ -40,15 +40,14 @@ if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
-
+define('AUTH_KEY',         'x^8u{(+>~=r#iN>~[Ss*XqW|Q3}H<~G:u)<8pgV+?bDNO)H(S6/Ny%<CWANs*QqO');
+define('SECURE_AUTH_KEY',  '<kK)= Z964z(&x<Hizkpz-i;A{h?|@!|40:oh=YaW:|94Tm/; BJzC_j1*L@KE:h');
+define('LOGGED_IN_KEY',    'SQl9_|F*:}o0H3n%2KhrO~4)=hb*Y5x?=Q(q;^*IUS#![D0gqLYWF<[^qJn*4dX8');
+define('NONCE_KEY',        'Lvx*dT88>dxCx0=nUK=UHQu5Ogitd$^)/|Z1q^StVVF}IHix#jqp<<`dUY | Ov>');
+define('AUTH_SALT',        'o-~KF(VWTCazm;<WeuP`4J<3jB8n)?s+b& 6MbP]de`=>F1a#|;H&zId]]7j@-X-');
+define('SECURE_AUTH_SALT', '|1dUFP>k|HJ%[/.S&?dmZ!b#/yBe9o-bLL#{F/H=U@Mp-s 7jiG^x3jo$fYNH4W^');
+define('LOGGED_IN_SALT',   '`*D~AA:/|a1ovId8W$Z;oA;:31Qp_hxO+ Iwvp]S P6~5R|2O[N38^}S72N*^Yv`');
+define('NONCE_SALT',       '|Wse<0O>M0c`4|~-2WSx1&IWW1p%Y4Wd?CT:Y|?RJ+;f&iv8eiSy;$I@%3/.,(n)');
 /**#@-*/
 /**
  * WordPress database table prefix.
